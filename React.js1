@@ -30,7 +30,7 @@ ReactDOM.render(
 
 
 //Part 2
-//Learnt hoe to embeed js inside html and display it
+//Learnt how to embeed js inside html and display it
 
 import React from "react";
 import ReactDOM from "react-dom";
