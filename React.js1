@@ -1,0 +1,25 @@
+//Day 1 
+//JSX using html in js and rendering it 
+
+
+//this is the place where we are importing the react
+//package to use it
+import React from "react";
+import ReactDOM from "react-dom";
+
+//We are using the render method of react 
+ReactDOM.render(
+  //the first parameter should be the html you want 
+  //to display it should be wrapped in one html element
+  <div>
+    <h1>My favorite frameworks</h1>
+  <ul>
+    <li>react js</li>
+    <li>node js</li>
+    <li>express js</li>
+  </ul>
+  </div>,
+  //Now after writting the html we need to specify 
+  //where it need's tobe placed in the html file
+  document.getElementById("root")
+  );
