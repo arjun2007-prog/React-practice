@@ -1,5 +1,7 @@
 //Day 1 
-//JSX using html in js and rendering it 
+
+//Part 1
+//JSX using html in js and rendering 
 
 
 //this is the place where we are importing the react
@@ -21,5 +23,28 @@ ReactDOM.render(
   </div>,
   //Now after writting the html we need to specify 
   //where it need's tobe placed in the html file
+  document.getElementById("root")
+  );
+
+
+
+
+//Part 2
+//Learnt hoe to embeed js inside html and display it
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const fName = "Arjun";
+const lName = "M.K";
+const number = 8;
+
+ReactDOM.render(
+//Inside the curly braces we are allowed to get or 
+//evaluate js values and display it in html
+<div>
+  <h1>Hello {fName + " " + lName} </h1> 
+  <p>Your favorite number is {number)} </p>
+</div>,
   document.getElementById("root")
   );
