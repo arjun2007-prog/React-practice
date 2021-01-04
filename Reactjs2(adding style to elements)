@@ -40,3 +40,37 @@ ReactDOM.render(
 <h1 style={customStyle}>Hello</h1>,
 document.getElementById("root")
 );
+
+//Part 3
+
+//This changes the text and style of the inner html present in the h1 according to the current time
+
+import React from "react";
+import ReactDOM from "react-dom";
+ 
+var date = new Date();
+var time = date.getHours()
+
+var greet;
+
+var greetStyle = {
+  color : "red"
+}
+
+if(time > 12 && time < 18){
+  greet = "Good afternoon"
+  greetStyle.color = "green";
+}
+else if(time > 18 && time < 24)
+{
+  greet = "Good Evening"
+  greetStyle.color  = "blue";
+}
+else {
+  greet = "Good Morning"
+  greetStyle.color  = "red";
+}
+ReactDOM.render(
+<h1 style={greetStyle} >{greet}</h1>,
+document.getElementById("root")
+);
