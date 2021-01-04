@@ -25,3 +25,18 @@ document.getElementById("root")
 //Part 2
 
 //Inline styling for JSX elements
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+const customStyle = 
+{
+  color:"red",
+  fontSize:"200px"
+}
+
+ReactDOM.render(
+//Here we need to put the css in objects and then put it in the style attribute
+<h1 style={customStyle}>Hello</h1>,
+document.getElementById("root")
+);
